@@ -104,13 +104,7 @@
       object-position: center 30%;
     }
 
-    @media (max-width: 768px) {
-  .hero-img {
-    object-fit: contain;
-    object-position: center center;
-    background: #1a1410;
-  }
-}
+   
 
     .hero-overlay {
       position: absolute;
@@ -406,11 +400,14 @@
 
   <!-- HERO -->
   <section id="hero" aria-label="Hero">
-    <img
-      class="hero-img"
-      src="images/img-ambassador.jpg"
-      alt="Laal Taal performing at the Indian Ambassador's residence in Washington DC"
-    />
+    <picture>
+  <source media="(max-width: 768px)" srcset="images/img-ambassador-mobile.jpg" />
+  <img
+    class="hero-img"
+    src="images/img-ambassador.jpg"
+    alt="Laal Taal performing at the Indian Ambassador's residence in Washington DC"
+  />
+</picture>
     <div class="hero-overlay" aria-hidden="true"></div>
     <div class="hero-content">
       <h1 class="hero-name">Laal Taal</h1>
